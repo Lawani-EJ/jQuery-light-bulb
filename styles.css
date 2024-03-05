@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.light-bulb {
+    position: relative;
+}
+
+.bulb {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid black;
+    transition: background-color 0.5s;
+}
+
+.bulb-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.switch {
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.switch.on {
+    background-color: green;
+}
+
+.switch-text {
+    font-size: 14px;
+}
